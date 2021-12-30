@@ -1,0 +1,49 @@
+.top-bar {
+  background-color: #5352ed;
+  font-size: 13px;
+}
+
+.top-bar .info ul {
+  margin: 0px;
+}
+.top-bar .info ul li {
+  display: inline;
+  color: aliceblue;
+}
+
+.socaial ul {
+  margin: 0px;
+}
+
+.socaial ul li {
+  display: inline;
+  float: right;
+  padding-left: 20px;
+  color: aliceblue;
+}
+
+.header .menu {
+  text-align: right;
+}
+.header {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.header .menu ul {
+  margin-bottom: 0px;
+}
+.header .menu ul li {
+  display: inline-block;
+}
+.header .menu ul li a {
+  text-decoration: none;
+  color: #5352ed;
+  padding: 20px 20px;
+  display: block;
+  transition: 0.2s;
+}
+
+.header .menu ul li:hover a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #5352ed;
+}
