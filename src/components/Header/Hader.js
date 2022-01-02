@@ -2,6 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Col, Container, Row } from 'react-bootstrap'
 import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import logo from '../../tesla-icon-2.jpg'
 import './Hader.css';
 
 const Hader = () => {
@@ -37,7 +38,7 @@ const Hader = () => {
                     <Row>
                         <Col md={3}>
                             <div className="logo">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Free_logo.svg" alt="" width={150}/>
+                                <img src={logo} alt="" width={150}/>
                             </div>
                         </Col>
                         <Col md={9}>

@@ -1,6 +1,8 @@
 .top-bar {
-  background-color: #5352ed;
+  background-color: #ffffff;
   font-size: 13px;
+
+  display: none;
 }
 
 .top-bar .info ul {
@@ -8,7 +10,7 @@
 }
 .top-bar .info ul li {
   display: inline;
-  color: aliceblue;
+  color: #e51837;
 }
 
 .socaial ul {
@@ -19,16 +21,26 @@
   display: inline;
   float: right;
   padding-left: 20px;
-  color: aliceblue;
+  color: #e51837;
 }
 
 .header .menu {
   text-align: right;
+  font-weight: 900;
 }
 .header {
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  margin-bottom: -72px;
+  position: relative;
+  z-index: 999;
+  height: 72px;
+  padding-top: 30px;
+}
+
+.header .logo {
+  padding-top: 10px;
 }
 .header .menu ul {
+  margin-top: 10px;
   margin-bottom: 0px;
 }
 .header .menu ul li {
@@ -36,14 +48,16 @@
 }
 .header .menu ul li a {
   text-decoration: none;
-  color: #5352ed;
-  padding: 20px 20px;
+  color: #202020;
+  padding: 10px 20px;
   display: block;
   transition: 0.2s;
+  border-radius: 10px;
 }
 
 .header .menu ul li:hover a {
   text-decoration: none;
   color: #ffffff;
-  background-color: #5352ed;
+  background-color: #4e4e4e50;
+  border-radius: 10px;
 }
