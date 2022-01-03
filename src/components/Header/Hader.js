@@ -4,6 +4,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import logo from '../../tesla-icon-2.jpg'
 import './Hader.css';
+import { Link } from 'react-router-dom'
 
 const Hader = () => {
     return (
@@ -38,14 +39,15 @@ const Hader = () => {
                     <Row>
                         <Col md={3}>
                             <div className="logo">
-                                <img src={logo} alt="" width={150}/>
+                                <Link to='/'><img src={logo} alt="" width={150}/></Link>
+                                
                             </div>
                         </Col>
                         <Col md={9}>
                             <nav className='menu'>
                                 <ul>
-                                    <li><a href="#">Home</a> </li>
-                                    <li><a href="#">Contact</a> </li>
+                                    <li><Link to="/">Home</Link> </li>
+                                    <li><Link to="/about">About</Link> </li>
                                     <li><a href="#">Blog</a> </li>
                                     <li><a href="#">Gallery</a> </li>
                                     <li><a href="#">About</a> </li>
