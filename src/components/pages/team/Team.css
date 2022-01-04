@@ -1,0 +1,43 @@
+.team {
+  width: 100%;
+  text-align: center;
+  padding: 90px;
+  margin: auto;
+}
+
+.team .service-item {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 30px 5px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+.team .service-item:hover {
+  transform: translateY(-20px);
+  transition: 0.8s;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  border-radius: 10px;
+}
+.team .service-logo {
+  padding-bottom: 20px;
+}
+
+.team .service-logo img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.team .service-title {
+  padding-bottom: 70px;
+}
+
+.team .service-title h3 {
+  font-weight: 900;
+}
+
+.team .service-content {
+  padding: 10px 20px;
+  text-align: justify;
+}

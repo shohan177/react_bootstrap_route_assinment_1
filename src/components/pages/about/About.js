@@ -26,7 +26,7 @@ const About = () => {
                   </Row>
               </Container>
       </section>
-      <section className='about'>
+      <section className='about-second'>
               <Container>
                   <Row>
                       <Col md={6}>

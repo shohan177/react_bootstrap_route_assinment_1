@@ -4,9 +4,9 @@ import { Col, Container, Row } from 'react-bootstrap'
 import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import logo from '../../tesla-icon-2.jpg'
 import './Hader.css';
-import { Link } from 'react-router-dom'
+import { Link , NavLink} from 'react-router-dom'
 
-const Hader = () => {
+const Hader = ({progress}) => {
     return (
         <>
             <div className="top-bar">
@@ -46,9 +46,11 @@ const Hader = () => {
                         <Col md={9}>
                             <nav className='menu'>
                                 <ul>
-                                    <li><Link to="/">Home</Link> </li>
-                                    <li><Link to="/about">About</Link> </li>
-                                    <li><a href="#">Blog</a> </li>
+                                   
+                                    {/* <li><NavLink onClick={(e)=> progress(100)} to="/">Home</NavLink> </li> */}
+                                    <li><NavLink  to="/">Home</NavLink> </li>
+                                    <li><NavLink  to="/about">About</NavLink> </li>
+                                    <li><NavLink  to="/team">Team</NavLink> </li>
                                     <li><a href="#">Gallery</a> </li>
                                     <li><a href="#">About</a> </li>
                                 </ul>

@@ -61,3 +61,10 @@
   background-color: #4e4e4e50;
   border-radius: 10px;
 }
+
+.header .menu ul li a.active {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #4e4e4e50;
+  border-radius: 10px;
+}
