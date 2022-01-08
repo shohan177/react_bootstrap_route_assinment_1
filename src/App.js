@@ -9,6 +9,7 @@ import Contact from './components/pages/contact/Contact';
 import {  Route, Routes  } from 'react-router-dom';
 import LoadingBar from 'react-top-loading-bar';
 import Team from './components/pages/team/Team.js';
+import Shop from './components/pages/shop/Shop';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           <Route path='/about' element={  <About/> }/>
           <Route path='/contact' element={  <Contact/> }/>
           <Route path='/team' element={  <Team/> }/>
+          <Route path='/shop' element={  <Shop/> }/>
         </Routes>
         <Footer/>
       

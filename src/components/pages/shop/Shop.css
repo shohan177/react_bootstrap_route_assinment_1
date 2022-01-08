@@ -1,0 +1,66 @@
+.shop {
+  margin-top: 200px;
+  text-align: center;
+}
+
+.shop .shop-item {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 30px 5px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+.shop .shop-item:hover {
+  /* transform: translateY(-20px); */
+  transition: 0.8s;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 10px;
+}
+.shop .shop-logo {
+  padding-bottom: 20px;
+}
+
+.shop .shop-logo img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.shop .shop-title {
+  padding-bottom: 70px;
+}
+
+.shop .shop-title h3 {
+  font-weight: 900;
+}
+
+.shop .shop-content {
+  padding: 10px 20px;
+  /* text-align: justify; */
+}
+
+.shop .add-to-card button {
+  background-color: rgba(0, 0, 0, 0.521);
+  border: none;
+  padding: 5px 30px;
+  border-radius: 10px;
+  color: aliceblue;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.shop .add-to-card button:hover {
+  background-color: aliceblue;
+  color: rgba(22, 22, 22, 0.733);
+}
+
+.shop .shop-content h5 {
+  color: brown;
+}
+
+.shop .shop-content span {
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0.747);
+}
