@@ -10,6 +10,11 @@ import {  Route, Routes  } from 'react-router-dom';
 import LoadingBar from 'react-top-loading-bar';
 import Team from './components/pages/team/Team.js';
 import Shop from './components/pages/shop/Shop';
+import Dashboard from './components/pages/Dashboard/Dashboard';
+import Index from './components/pages/Dashboard/Index';
+import Payment from './components/pages/Dashboard/Payment';
+import Profile from './components/pages/Dashboard/Profile';
+import Password from './components/pages/Dashboard/Password';
 
 
 function App() {
@@ -32,6 +37,13 @@ function App() {
           <Route path='/contact' element={  <Contact/> }/>
           <Route path='/team' element={  <Team/> }/>
           <Route path='/shop' element={  <Shop/> }/>
+          <Route path='/Dashboard' element={<Dashboard />}>
+              <Route path='/Dashboard' element={  <Index/> }/>
+              <Route path='/Dashboard/payment' element={  <Payment/> }/>
+              <Route path='/Dashboard/profile' element={  <Profile/> }/>
+              <Route path='/Dashboard/password' element={  <Password/> }/>
+
+          </Route>
         </Routes>
         <Footer/>
       

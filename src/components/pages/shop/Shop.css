@@ -24,8 +24,9 @@
 .shop .shop-logo img {
   height: 150px;
   width: 150px;
+  padding: 10px;
   object-fit: cover;
-  border-radius: 100%;
+  /* border-radius: 100%; */
 }
 
 .shop .shop-title {

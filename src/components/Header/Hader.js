@@ -52,7 +52,7 @@ const Hader = ({progress}) => {
                                     <li><NavLink  to="/about">About</NavLink> </li>
                                     <li><NavLink  to="/team">Team</NavLink> </li>
                                     <li><NavLink to="/shop">Shop</NavLink> </li>
-                                    <li><a href="#">About</a> </li>
+                                    <li><NavLink to="/Dashboard">Dashboard</NavLink> </li>
                                 </ul>
                             </nav>
                         </Col>
