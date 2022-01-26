@@ -2,7 +2,7 @@ import {React, useState} from 'react';
 import './App.css';
 import Hader from './components/Header/Hader.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Footer from './components/footer/Footer.js';
+import Footer from './components/footer/footer.js';
 import Home from './components/pages/home/Home.js';
 import About from './components/pages/about/About.js';
 import Contact from './components/pages/contact/Contact';
@@ -15,6 +15,7 @@ import Index from './components/pages/Dashboard/Index';
 import Payment from './components/pages/Dashboard/Payment';
 import Profile from './components/pages/Dashboard/Profile';
 import Password from './components/pages/Dashboard/Password';
+import SignUp from './components/SignUp/SignUp';
 
 
 function App() {
@@ -45,7 +46,8 @@ function App() {
 
           </Route>
         </Routes>
-        <Footer/>
+      <Footer />
+      <SignUp />
       
     </>
   );
