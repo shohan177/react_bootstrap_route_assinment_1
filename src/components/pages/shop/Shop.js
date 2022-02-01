@@ -2,38 +2,35 @@ import {React , useState, useEffect} from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import './Shop.css'
 import Skeleton from 'react-loading-skeleton'
+import Product from './Product.js'
+import SideBar from './SideBar'
+
 
 const Shop = () => {
-    const [products, setProducts] = useState();
+    const [products, setProducts] = useState(null);
+    console.log(products);
     useEffect(() => {
-        fetch('https://fakestoreapi.com/products')
-        .then(data => data.json())
-        .then(data => setProducts(data))
+        // fetch('https://fakestoreapi.com/products')
+        // .then(data => data.json())
+        // .then(data => setProducts(data))
     }, [])
 
   return (
     <>
           <div className="shop">
               
-                <Container>
+              <Container>
                   <Row>
-                      {products ?
-                          products.map(data =>        
-                        <Col md={3}>
-                        <div className="shop-item">
-                            <div className="shop-logo">
-                                <img src={data.image} alt="" width={100} />
-                            </div>
-                            <div className="shop-content">
-                                  <h4>Soler Sytem</h4>
-                                  <h5>154$</h5>
-                                  <span>200$</span>
-                            </div>
-                            <div className="add-to-card">
-                                <button>add to card</button>
-                            </div>
-                        </div>
-                        </Col>
+                      <Col md={2}>
+                   
+                        <SideBar products={setProducts} />
+                      </Col>
+                      <Col md={10}>
+                      <Row>
+                      {products ? products.map(data => 
+                              
+                          <Product product={data} />
+                          
                         ) : [1, 2, 3, 4, 5, 6,7,8].map(data =>
                             
                             <Col md={3}>
@@ -53,10 +50,10 @@ const Shop = () => {
                             </Col>
                         )}
                       
-                      
-                      
-                      
-                    </Row>      
+                </Row>  
+                      </Col>
+                  </Row>
+    
             </Container>
         </div>
     </>

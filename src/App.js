@@ -47,7 +47,7 @@ function App() {
           </Route>
         </Routes>
       <Footer />
-      <SignUp />
+      {/* <SignUp /> */}
       
     </>
   );

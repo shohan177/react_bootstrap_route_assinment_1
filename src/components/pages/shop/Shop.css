@@ -65,3 +65,10 @@
   text-decoration: line-through;
   color: rgba(0, 0, 0, 0.747);
 }
+
+.side-bar {
+  background-color: aliceblue;
+  width: auto;
+  height: 100%;
+  padding: 10px 10px;
+}
