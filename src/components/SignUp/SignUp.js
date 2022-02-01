@@ -1,14 +1,43 @@
-import React from 'react';
-import { Container,Row,Col ,Form, Card, Button } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Container,Row,Col ,Form, Card, Button,Alert, CloseButton } from 'react-bootstrap';
 import './SignUp.css';
 
 const SignUp = () => {
+    const [name, setName] = useState();
+    const [alert, setAlert] = useState({
+        msg: 'shohan',
+        type: 'info',
+        status: false
+    })
     let handleSignUpForm = (e) => {
         e.preventDefault();
 
         let form_data = new FormData(e.target)
-        console.log(Object.fromEntries(form_data.entries()));
+        let data = Object.fromEntries(form_data.entries());
         
+        if (data.name === "" || data.email === "" || data.user_name == "") {
+            setAlert({
+                msg: 'all fild required',
+                type: 'warning',
+                status: true
+            })
+        } else {
+            setAlert({
+                msg: 'data stable ',
+                type: 'success',
+                status: true
+            })
+        }
+
+        
+    }
+
+    let handelAlertClose = () => {
+        setAlert({
+            msg: '',
+            type: '',
+            status: false
+        })
     }
     return (
         <>
@@ -18,6 +47,10 @@ const SignUp = () => {
                         <Card className='shadow'>
                             <Card.Body>
                                 <h2>Create an Account</h2>
+                                {alert.status ? 
+                                    <Alert className='d-flex justify-content-between' variant={alert.type}>{ alert.msg }<CloseButton onClick={handelAlertClose}></CloseButton></Alert>
+                                    :""
+                                }
                                 <Form onSubmit={handleSignUpForm}>
                                     <Form.Group >
                                         <Form.Label>Full Name</Form.Label>
@@ -25,7 +58,8 @@ const SignUp = () => {
                                     </Form.Group>
                                     <Form.Group>
                                         <Form.Label>Email</Form.Label>
-                                        <Form.Control name='email'></Form.Control>
+                                        <Form.Control name='email' onChange={(e) => setName(e.target.value)} value={name}></Form.Control>
+                                        <p>{name}</p>
                                     </Form.Group>
                                     <Form.Group>
                                         <Form.Label>User Name</Form.Label>
