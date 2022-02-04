@@ -9,12 +9,12 @@ const Product = ({ product }) => {
         <Col md={3}>
             <div className="shop-item">
                 <div className="shop-logo">
-                    <img src={product.image} alt="" width={100} />
+                    <img src={product.img} alt="" width={100} />
                 </div>
                 <div className="shop-content">
-                        <h4>Soler Sytem</h4>
+                        <h4>{product.name}</h4>
                         <h5>{product.price}$</h5>
-                        <span>200$</span>
+                        {/* <span>200$</span> */}
                 </div>
                 <div className="add-to-card">
                     <button>add to card</button>

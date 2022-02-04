@@ -10,9 +10,9 @@ const Shop = () => {
     const [products, setProducts] = useState(null);
     console.log(products);
     useEffect(() => {
-        // fetch('https://fakestoreapi.com/products')
-        // .then(data => data.json())
-        // .then(data => setProducts(data))
+        fetch('http://localhost:7000/product')
+        .then(data => data.json())
+        .then(data => setProducts(data))
     }, [])
 
   return (
@@ -21,7 +21,7 @@ const Shop = () => {
               
               <Container>
                   <Row>
-                      <Col md={2}>
+                      <Col md={2} className='sidebar'>
                    
                         <SideBar products={setProducts} />
                       </Col>

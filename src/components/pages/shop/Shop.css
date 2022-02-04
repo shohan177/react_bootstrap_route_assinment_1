@@ -72,3 +72,16 @@
   height: 100%;
   padding: 10px 10px;
 }
+.shop .sidebar {
+  min-height: 90vh;
+  padding-bottom: 30px;
+}
+.shop-logo {
+  height: 100%;
+  overflow: hidden;
+  transition: all 1s ease;
+}
+.shop-logo:hover {
+  transform: scale(1.5);
+  height: 100%;
+}

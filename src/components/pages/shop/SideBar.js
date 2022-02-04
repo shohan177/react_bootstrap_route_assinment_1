@@ -6,7 +6,7 @@ const SideBar = ({ products }) => {
 
     let handelSerach = (e) => {
         
-        fetch('https://fakestoreapi.com/products')
+        fetch('http://localhost:7000/product?q='+e.target.value)
         .then(data => data.json())
         .then(data => products(data))
         
