@@ -8,7 +8,7 @@ import SideBar from './SideBar'
 
 const Shop = () => {
     const [products, setProducts] = useState(null);
-    console.log(products);
+
     useEffect(() => {
         fetch('http://localhost:7000/product')
         .then(data => data.json())
@@ -23,7 +23,7 @@ const Shop = () => {
                   <Row>
                       <Col md={2} className='sidebar'>
                    
-                        <SideBar products={setProducts} />
+                          <SideBar setProducts={setProducts} products={products}/>
                       </Col>
                       <Col md={10}>
                       <Row>
