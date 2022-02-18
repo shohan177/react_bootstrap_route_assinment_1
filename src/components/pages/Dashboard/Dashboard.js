@@ -35,7 +35,7 @@ const Dashboard = () => {
                                 </div>
                                 <div>
                                    <Link class="btn btn-lightWhite my-1 p-2" to="/Dashboard/payment">
-                                    Payment
+                                    TodoList
                                    </Link>
                                 </div>
                                 <div>

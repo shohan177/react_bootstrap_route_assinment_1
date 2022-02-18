@@ -12,7 +12,7 @@ import Team from './components/pages/team/Team.js';
 import Shop from './components/pages/shop/Shop';
 import Dashboard from './components/pages/Dashboard/Dashboard';
 import Index from './components/pages/Dashboard/Index';
-import Payment from './components/pages/Dashboard/Payment';
+import TodoList from './components/pages/Dashboard/TodoList';
 import Profile from './components/pages/Dashboard/Profile';
 import Password from './components/pages/Dashboard/Password';
 import SignUp from './components/SignUp/SignUp';
@@ -40,7 +40,7 @@ function App() {
           <Route path='/shop' element={  <Shop/> }/>
           <Route path='/Dashboard' element={<Dashboard />}>
               <Route path='/Dashboard' element={  <Index/> }/>
-              <Route path='/Dashboard/payment' element={  <Payment/> }/>
+              <Route path='/Dashboard/payment' element={  <TodoList/> }/>
               <Route path='/Dashboard/profile' element={  <Profile/> }/>
               <Route path='/Dashboard/password' element={  <Password/> }/>
 

@@ -264,7 +264,7 @@ a:link {
 /* payment table start */
 .payment-table {
   line-height: 34px;
-  margin-left: 30px;
+  /* margin-left: 30px; */
 }
 
 .payment-table td,
