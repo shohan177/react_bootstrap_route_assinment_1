@@ -2,8 +2,8 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link, Outlet } from 'react-router-dom';
 import './Dashboard.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 const Dashboard = () => {
   return (
@@ -41,6 +41,11 @@ const Dashboard = () => {
                                 <div>
                                    <Link class="btn btn-lightWhite my-1 p-2" to="/Dashboard/profile">
                                     Profile
+                                   </Link>
+                                </div>
+                                <div>
+                                   <Link class="btn btn-lightWhite my-1 p-2" to="/Dashboard/product">
+                                    Product
                                    </Link>
                                 </div>
                                 <div>

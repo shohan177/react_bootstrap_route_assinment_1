@@ -15,7 +15,8 @@ import Index from './components/pages/Dashboard/Index';
 import TodoList from './components/pages/Dashboard/TodoList';
 import Profile from './components/pages/Dashboard/Profile';
 import Password from './components/pages/Dashboard/Password';
-import SignUp from './components/SignUp/SignUp';
+// import SignUp from './components/SignUp/SignUp';
+import ProductIndex from './components/pages/Dashboard/product/ProductIndex';
 
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
               <Route path='/Dashboard/payment' element={  <TodoList/> }/>
               <Route path='/Dashboard/profile' element={  <Profile/> }/>
               <Route path='/Dashboard/password' element={  <Password/> }/>
+              <Route path='/Dashboard/product' element={  <ProductIndex/> }/>
 
           </Route>
         </Routes>
