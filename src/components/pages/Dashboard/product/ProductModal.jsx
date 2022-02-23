@@ -34,7 +34,7 @@ const ProductModal = ({ modal, setModal }) => {
                       <Form.Select aria-label="Default select example">
                         <option disabled>select category</option>
                         {category ? category.map(category => 
-                            <option value="1">{category.name}</option>
+                            <option value={category.id}>{category.name}</option>
                         ):""}      
                         </Form.Select>
                       </FormGroup>
