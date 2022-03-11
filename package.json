@@ -8,6 +8,7 @@
     "@fortawesome/free-regular-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",
+    "@sweetalert2/theme-dark": "^5.0.10",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
@@ -20,6 +21,7 @@
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
     "react-top-loading-bar": "^2.1.0",
+    "sweetalert2": "^11.4.4",
     "web-vitals": "^2.1.2"
   },
   "scripts": {
